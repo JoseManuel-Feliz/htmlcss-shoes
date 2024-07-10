@@ -1,2 +1,55 @@
-font-family: 'Rubik Mono One',
-sans-serif;
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+/* Nav bar */
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+/* Product section */
+.shoes {
+    height: 100vh;
+    color: #ffff00;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.bg-color {
+    background-color: #ff0000;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.img-shoe {
+    max-width: 100%;
+}
