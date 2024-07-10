@@ -1,13 +1,27 @@
 /* Reset */
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 900;
 }
 
-/* Nav bar */
+/* Generics */
+html {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
 nav {
     position: fixed;
     top: 20px;
@@ -15,31 +29,67 @@ nav {
     z-index: 1;
 }
 
-nav a {
-    display: inline-block;
-    margin: 5px;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 50%;
-    background-color: white;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+a:hover {
+    scale: 1.5;
+    border: solid 1px;
 
 }
+
+/* Utils */
+:root {
+    --red: #ff0000;
+    --green: #006400;
+    --yellow: #FFFF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+/* Nav bar */
+
+nav a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+
+    border-radius: 50%;
+    background-color: var(--white);
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--black);
+    box-shadow: 2px 2px 8px var(--black)
+}
+
+
 
 /* Product section */
 .shoes {
+
     height: 100vh;
-    color: #ffff00;
-    font-size: 2rem;
+    color: var(--yellow);
+    font-size: 4rem;
     text-align: center;
-    font-weight: bold;
     position: relative;
 }
 
-.bg-color {
-    background-color: #ff0000;
+#blue-shoes {
+    background-color: var(--red);
+}
+
+#white-shoes {
+    background-color: var(--green);
+}
+
+#converse-shoes {
+    background-color: var(--yellow);
+    color: var(--red);
 }
 
 .content {
@@ -48,8 +98,4 @@ nav a {
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-}
-
-.img-shoe {
-    max-width: 100%;
 }
