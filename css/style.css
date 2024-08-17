@@ -7,6 +7,20 @@
     font-weight: 900;
 }
 
+/* Custom Properties */
+:root {
+    --red: #ff0000;
+    --green: #006400;
+    --yellow: #FFFF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Utils */
+.img-fluid {
+    max-width: 100%;
+}
+
 /* Generics */
 html {
     overflow-y: hidden;
@@ -19,7 +33,6 @@ li {
 
 ul {
     list-style-type: none;
-
 }
 
 nav {
@@ -31,50 +44,27 @@ nav {
 
 a:hover {
     scale: 1.5;
+    margin: 0 15px;
     border: solid 1px;
-
-}
-
-/* Utils */
-:root {
-    --red: #ff0000;
-    --green: #006400;
-    --yellow: #FFFF00;
-    --white: #ffffff;
-    --black: #000000;
-}
-
-.img-fluid {
-    max-width: 100%;
 }
 
 /* Nav bar */
-
 nav a {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    padding: 8px 15px;
     margin: 5px;
-    line-height: 30px;
-    text-align: center;
-    border: none;
-
     border-radius: 50%;
     background-color: var(--white);
     text-decoration: none;
-    font-weight: 900;
     color: var(--black);
     box-shadow: 2px 2px 8px var(--black)
 }
 
-
-
 /* Product section */
 .shoes {
-
     height: 100vh;
     color: var(--yellow);
-    font-size: 4rem;
+    font-size: calc(1.875rem + 3.5vw);
     text-align: center;
     position: relative;
 }
@@ -92,7 +82,7 @@ nav a {
     color: var(--red);
 }
 
-.content {
+.wrapper {
     width: 100%;
     position: absolute;
     top: 50%;
